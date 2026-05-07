@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- App Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NetFetch Demo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fetches todos from jsonplaceholder.typicode.com"
+        android:textSize="13sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Fetch Button -->
+    <Button
+        android:id="@+id/btnFetchData"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Fetch Data"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E94560"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Status Message (success / error / warning) -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:textColor="#212121"
+        android:lineSpacingExtra="4dp"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Results Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULTS"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:textColor="#9E9E9E"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Todo List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
